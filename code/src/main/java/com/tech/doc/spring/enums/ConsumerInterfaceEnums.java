@@ -6,6 +6,8 @@ public enum ConsumerInterfaceEnums {
     // 通过枚举来定义不同的消费者以及实际需要执行的动作
     APP_1("app1", "测试app1号", input -> System.out.println("app1号收到消息：" + input)),
 
+    APP_2("app2", "测试app2号", input -> System.out.println("app2号收到消息：" + input)),
+
     ;
 
 

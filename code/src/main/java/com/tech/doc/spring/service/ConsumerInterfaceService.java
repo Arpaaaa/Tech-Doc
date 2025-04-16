@@ -11,6 +11,9 @@ public class ConsumerInterfaceService {
         };
         // 使用Accept方法来调用
         validator.accept(name);
+        // 以下调用会报错
+        validator.accept(null);
+        validator.accept(StringUtils.EMPTY);
     }
 
     public void doAndThen(String name, String email) {
